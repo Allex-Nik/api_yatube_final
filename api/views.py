@@ -3,7 +3,6 @@ from posts.models import Post, Group, Comment
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
 from rest_framework.permissions import IsAuthenticated
 from .permission import IsAuthorOrReadOnly
-from rest_framework.exceptions import MethodNotAllowed
 
 
 class PostViewSet(viewsets.ModelViewSet):
